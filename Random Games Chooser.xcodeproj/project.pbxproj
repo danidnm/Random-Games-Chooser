@@ -14,6 +14,7 @@
 		1F5A538129E08E2600F1AE4B /* Random_Games_ChooserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A538029E08E2600F1AE4B /* Random_Games_ChooserTests.swift */; };
 		1F5A538B29E08E2600F1AE4B /* Random_Games_ChooserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A538A29E08E2600F1AE4B /* Random_Games_ChooserUITests.swift */; };
 		1F5A538D29E08E2600F1AE4B /* Random_Games_ChooserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A538C29E08E2600F1AE4B /* Random_Games_ChooserUITestsLaunchTests.swift */; };
+		1F5A539B29E1703F00F1AE4B /* GameListApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A539A29E1703F00F1AE4B /* GameListApiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		1F5A538629E08E2600F1AE4B /* Random Games ChooserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Random Games ChooserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5A538A29E08E2600F1AE4B /* Random_Games_ChooserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_Games_ChooserUITests.swift; sourceTree = "<group>"; };
 		1F5A538C29E08E2600F1AE4B /* Random_Games_ChooserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_Games_ChooserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F5A539929E0D1C600F1AE4B /* Random Games ChooserDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Random Games ChooserDebug.entitlements"; sourceTree = "<group>"; };
+		1F5A539A29E1703F00F1AE4B /* GameListApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListApiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		1F5A536D29E08E2400F1AE4B /* Random Games Chooser */ = {
 			isa = PBXGroup;
 			children = (
+				1F5A539929E0D1C600F1AE4B /* Random Games ChooserDebug.entitlements */,
+				1F5A539A29E1703F00F1AE4B /* GameListApiModel.swift */,
 				1F5A536E29E08E2400F1AE4B /* Random_Games_ChooserApp.swift */,
 				1F5A537029E08E2400F1AE4B /* ContentView.swift */,
 				1F5A537229E08E2600F1AE4B /* Assets.xcassets */,
@@ -261,6 +266,7 @@
 			files = (
 				1F5A537129E08E2400F1AE4B /* ContentView.swift in Sources */,
 				1F5A536F29E08E2400F1AE4B /* Random_Games_ChooserApp.swift in Sources */,
+				1F5A539B29E1703F00F1AE4B /* GameListApiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Random Games Chooser/Random_Games_Chooser.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Random Games Chooser/Random Games ChooserDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Random Games Chooser/Preview Content\"";
@@ -427,9 +433,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -437,10 +443,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danidnm.Random-Games-Chooser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,9 +473,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -475,10 +483,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danidnm.Random-Games-Chooser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
