@@ -14,7 +14,7 @@ This was my initial prompt and from this I was able to build almost the entire a
 
 <hr>
 
-<i>I am a web programmer with more than ten years of experience, but I’ve never developed an mobile application. Now I want to create a iOS Application using xcode.
+<i>I am a web programmer with more than ten years of experience, but I’ve never developed a mobile application. Now I want to create a iOS Application using xcode.
 I want you to guide me over the whole process of creating this application step by step, so I want you to describe one step, wait for my feedback, then describe the next step and so on. If there are different options for the a particular step, I want you to explain the differences and ask me for the way to continue.
 
 The application to write will work like this:
@@ -29,7 +29,7 @@ The application to write will work like this:
 
 <br />
 
-At the end of the README you’ll have the full conversation with the AI in a very long PDF. I assure you I worth the read.
+At the end of the README you’ll have the full conversation with the AI in a very long PDF. I assure you it worths the read.
 
 <br />
 
